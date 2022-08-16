@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in;
+}
+
+.slider img.active {
+  width: 100% !important;
+  height: 100%;
+}
+
+.previous {
+  margin-right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.next {
+  margin-left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
